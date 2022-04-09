@@ -1,3 +1,6 @@
+// **Problem:**  Filter list of items using price
+
+// Take 2 inputs from the user. A lower price, and an upper price. List only the products which fall in between the lower and upper price range.
 import { useState } from "react";
 
 const FilterByPrice = () => {
