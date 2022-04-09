@@ -1,10 +1,10 @@
 import "./App.css";
-import { EmailController } from "./questions";
+import { RemoveItem } from "./questions";
 
 function App() {
   return (
     <div className="App">
-      <EmailController />
+      <RemoveItem />
     </div>
   );
 }
