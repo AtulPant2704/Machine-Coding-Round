@@ -1,10 +1,10 @@
 import "./App.css";
-import { FilterByPrice } from "./questions/FilterByPrice";
+import { QuantityController } from "./questions";
 
 function App() {
   return (
     <div className="App">
-      <FilterByPrice />
+      <QuantityController />
     </div>
   );
 }
