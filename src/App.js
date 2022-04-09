@@ -1,10 +1,10 @@
 import "./App.css";
-import { WelcomeMessage } from "./questions";
+import { AddItem } from "./questions";
 
 function App() {
   return (
     <div className="App">
-      <WelcomeMessage />
+      <AddItem />
     </div>
   );
 }

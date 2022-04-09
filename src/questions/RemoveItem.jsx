@@ -1,6 +1,7 @@
 // Problem: Here is a list of items. Add a remove button for these items. With every click of the remove button, remove one item from the list.
 // import { useState } from "react";
 // Extension of question 02 - after removing an item, show a "undo remove" button. On clicking this button, add back the item that was removed and hide this "undo remove" button.
+import { useState } from "react";
 
 const RemoveItem = () => {
   const data = [
