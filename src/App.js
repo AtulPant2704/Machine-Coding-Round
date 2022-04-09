@@ -1,10 +1,10 @@
 import "./App.css";
-import { AddItem } from "./questions";
+import { UpdatePrice } from "./questions";
 
 function App() {
   return (
     <div className="App">
-      <AddItem />
+      <UpdatePrice />
     </div>
   );
 }
