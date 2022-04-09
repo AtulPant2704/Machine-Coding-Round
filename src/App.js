@@ -1,10 +1,10 @@
 import "./App.css";
-import { QuantityController } from "./questions";
+import { EmailController } from "./questions";
 
 function App() {
   return (
     <div className="App">
-      <QuantityController />
+      <EmailController />
     </div>
   );
 }
