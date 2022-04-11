@@ -6,3 +6,5 @@ export { WelcomeMessage } from "./WelcomeMessage";
 export { AddItem } from "./AddItem";
 export { UpdatePrice } from "./UpdatePrice";
 export { AddTodo } from "./AddTodo";
+export { CategoryProducts } from "./CategoryProducts";
+
