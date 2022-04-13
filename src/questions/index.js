@@ -8,5 +8,7 @@ export { UpdatePrice } from "./UpdatePrice";
 export { AddTodo } from "./AddTodo";
 export { CategoryProducts } from "./CategoryProducts";
 export { UserData } from "./UserData";
+export { FilterItemsWithColor } from "./FilterItemsWithColor";
+
 
 

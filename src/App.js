@@ -1,10 +1,10 @@
 import "./App.css";
-import { UserData } from "./questions";
+import { FilterItemsWithColor } from "./questions";
 
 function App() {
   return (
     <div className="App">
-      <UserData />
+      <FilterItemsWithColor />
     </div>
   );
 }
