@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { products } from "./data/productsDb";
+import products from "./data/productsDb";
 import { ProductCard, Filters } from "./components";
 import {
   filterByBrand,
