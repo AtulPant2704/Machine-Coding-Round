@@ -22,3 +22,7 @@
   padding: 5px 10px;
   margin-left: auto;
 }
+
+.btn-clear:hover {
+  background-color: var(--secondary-hover-color);
+}
