@@ -31,9 +31,12 @@ export default function App() {
         <Filters filter={filter} setFilter={setFilter} />
       </section>
       <section className="products-container">
-        {sortedProducts.map((product) => (
-          <ProductCard key={product.id} {...product} />
-        ))}
+        <h2 className="products-count">Products: {sortedProducts.length}</h2>
+        <section className="products-section">
+          {sortedProducts.map((product) => (
+            <ProductCard key={product.id} {...product} />
+          ))}
+        </section>
       </section>
     </section>
   );

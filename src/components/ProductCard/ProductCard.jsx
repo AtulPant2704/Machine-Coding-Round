@@ -1,4 +1,5 @@
-const ProductCard = ({ id, title, img, price }) => {
+import "./ProductCard.css";
+const ProductCard = ({ id, title, img, price, brand, size }) => {
   return (
     <div className="product-card">
       <div className="img-container">
@@ -7,7 +8,12 @@ const ProductCard = ({ id, title, img, price }) => {
       </div>
       <div className="card-details">
         <p className="card-title">{title}</p>
-        <h3 className="card-price">₹ {price}</h3>
+        <div className="card-description">
+          <h3 className="card-price">₹ {price}</h3>
+          <div className="card-brand-size">
+            <span>{brand}</span> | <span>{size}</span>
+          </div>
+        </div>
         <button className="cart-btn ecommerce-btn">Add to Cart</button>
       </div>
     </div>

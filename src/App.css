@@ -1,14 +1,18 @@
 .products-filter-container {
   display: flex;
   padding: 1rem;
+  gap: 2rem;
 }
 
 .filter-container {
-  width: 20%;
+  width: 15%;
 }
 
 .products-container {
-  width: 80%;
+  width: 85%;
+}
+
+.products-section {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
 }
