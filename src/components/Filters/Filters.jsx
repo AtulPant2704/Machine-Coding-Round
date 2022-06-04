@@ -18,6 +18,7 @@ const Filters = ({ filter, setFilter }) => {
               size: [],
               brand: [],
               gender: "",
+              priceRange: 1000,
             }))
           }
         >
