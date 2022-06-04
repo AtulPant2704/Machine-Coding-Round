@@ -4,3 +4,15 @@
   justify-content: space-between;
   align-items: center;
 }
+
+@media screen and (max-width: 550px) {
+  .product-card {
+    width: 15rem;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .product-card {
+    width: 12rem;
+  }
+}

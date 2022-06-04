@@ -6,6 +6,10 @@
 
 .filter-container {
   width: 15%;
+  position: sticky;
+  height: fit-content;
+  top: 1rem;
+  left: 1rem;
 }
 
 .products-container {
@@ -15,4 +19,15 @@
 .products-section {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+}
+
+@media screen and (max-width: 650px) {
+  .filter-container {
+    width: 25%;
+  }
+
+  .products-container {
+    width: 75%;
+    margin-left: auto;
+  }
 }
