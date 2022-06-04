@@ -38,11 +38,17 @@ export default function App() {
       </section>
       <section className="products-container">
         <h2 className="products-count">Products: {sortedProducts.length}</h2>
-        <section className="products-section">
-          {sortedProducts.map((product) => (
-            <ProductCard key={product.id} {...product} />
-          ))}
-        </section>
+        {sortedProducts.length > 0 ? (
+          <section className="products-section">
+            {sortedProducts.map((product) => (
+              <ProductCard key={product.id} {...product} />
+            ))}
+          </section>
+        ) : (
+          <div>
+            <h2>No products available</h2>
+          </div>
+        )}
       </section>
     </section>
   );
