@@ -26,3 +26,7 @@
 .btn-clear:hover {
   background-color: var(--secondary-hover-color);
 }
+
+.slider-label {
+  display: block;
+}

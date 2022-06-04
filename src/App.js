@@ -6,6 +6,7 @@ import {
   filterBySize,
   filterByGender,
   sortByPrice,
+  filterByPriceRange,
 } from "./utils";
 import "./App.css";
 
@@ -15,6 +16,7 @@ export default function App() {
     size: [],
     brand: [],
     gender: "",
+    priceRange: 700,
   });
 
   const brandFilteredProducts = filterByBrand(filter.brand, products);
@@ -23,7 +25,11 @@ export default function App() {
     filter.gender,
     sizeFilteredProducts
   );
-  const sortedProducts = sortByPrice(filter.sortBy, genderFilteredProducts);
+  const priceRangeFilteredProducts = filterByPriceRange(
+    filter.priceRange,
+    genderFilteredProducts
+  );
+  const sortedProducts = sortByPrice(filter.sortBy, priceRangeFilteredProducts);
 
   return (
     <section className="products-filter-container">
