@@ -23,9 +23,9 @@ const Filters = ({ filter, setFilter }) => {
           Clear
         </button>
       </div>
+      <PriceSortFilter filterSortBy={filter.sortBy} setFilter={setFilter} />
       <BrandFilter filterBrand={filter.brand} setFilter={setFilter} />
       <GenderFilter filterGender={filter.gender} setFilter={setFilter} />
-      <PriceSortFilter filterSortBy={filter.sortBy} setFilter={setFilter} />
       <SizeFilter filterSize={filter.size} setFilter={setFilter} />
     </>
   );
