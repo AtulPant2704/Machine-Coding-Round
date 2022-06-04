@@ -37,7 +37,7 @@ const BrandFilter = ({ filterBrand, setFilter }) => {
               : removeFilterBrandHandler("Nike")
           }
         />
-        <label htmlFor="nike">Reebok</label>
+        <label htmlFor="nike">Nike</label>
       </div>
       <div className="filter-check">
         <input
@@ -50,7 +50,7 @@ const BrandFilter = ({ filterBrand, setFilter }) => {
               : removeFilterBrandHandler("Puma")
           }
         />
-        <label htmlFor="puma">Nike</label>
+        <label htmlFor="puma">Puma</label>
       </div>
     </div>
   );
