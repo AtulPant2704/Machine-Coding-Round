@@ -21,6 +21,13 @@
   grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
 }
 
+.empty-products {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 @media screen and (max-width: 650px) {
   .filter-container {
     width: 25%;

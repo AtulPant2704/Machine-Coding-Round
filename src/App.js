@@ -45,7 +45,7 @@ export default function App() {
             ))}
           </section>
         ) : (
-          <div>
+          <div className="empty-products">
             <h2>No products available</h2>
           </div>
         )}
