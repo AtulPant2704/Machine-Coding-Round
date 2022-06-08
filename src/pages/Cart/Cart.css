@@ -1,0 +1,36 @@
+.cart-page {
+  display: flex;
+  gap: 5rem;
+  width: 80%;
+  margin: 0.5rem auto;
+}
+
+.cart-container {
+  width: 60%;
+}
+
+.cart-summary-container {
+  width: 40%;
+}
+
+.cart-length {
+  text-align: center;
+  padding-top: 2rem;
+}
+
+.save-later-container {
+  width: 80%;
+  margin: 0.5rem auto;
+}
+
+.wishlist-btn {
+  cursor: pointer;
+  background-color: var(--secondary-color);
+  color: white;
+  border-width: 0;
+  margin-right: 5px;
+}
+
+.wishlist-btn:hover {
+  background-color: var(--secondary-hover-color);
+}
