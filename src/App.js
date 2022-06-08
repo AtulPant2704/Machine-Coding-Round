@@ -1,46 +1,16 @@
-import { useState } from "react";
+import { Routes, Route } from "react-router-dom";
 import products from "./data/productsDb";
-import { ProductCard, Filters } from "./components";
-import {
-  filterByBrand,
-  filterBySize,
-  filterByGender,
-  sortByPrice,
-  filterByPriceRange,
-} from "./utils";
+import { ProductCard } from "./components";
 import "./App.css";
 
 export default function App() {
-  const [filter, setFilter] = useState({
-    sortBy: "",
-    size: [],
-    brand: [],
-    gender: "",
-    priceRange: 700,
-  });
-
-  const brandFilteredProducts = filterByBrand(filter.brand, products);
-  const sizeFilteredProducts = filterBySize(filter.size, brandFilteredProducts);
-  const genderFilteredProducts = filterByGender(
-    filter.gender,
-    sizeFilteredProducts
-  );
-  const priceRangeFilteredProducts = filterByPriceRange(
-    filter.priceRange,
-    genderFilteredProducts
-  );
-  const sortedProducts = sortByPrice(filter.sortBy, priceRangeFilteredProducts);
-
   return (
     <section className="products-filter-container">
-      <section className="filter-container">
-        <Filters filter={filter} setFilter={setFilter} />
-      </section>
       <section className="products-container">
-        <h2 className="products-count">Products: {sortedProducts.length}</h2>
-        {sortedProducts.length > 0 ? (
+        <h2 className="products-count">Products: {products.length}</h2>
+        {products.length > 0 ? (
           <section className="products-section">
-            {sortedProducts.map((product) => (
+            {products.map((product) => (
               <ProductCard key={product.id} {...product} />
             ))}
           </section>
