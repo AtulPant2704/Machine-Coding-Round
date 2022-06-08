@@ -30,6 +30,18 @@ const CartCard = ({
           <span className="discount-percent">{discount}% off</span>
         </h3>
         <div className="quantity-controls">
+          <button
+            className="btn-control decrease-btn"
+            onClick={() =>
+              cartDispatch({
+                type: "DECREASE_QUANTITY",
+                payload: { productId: id },
+              })
+            }
+            disabled={qty === 1}
+          >
+            <i className="fas fa-minus"></i>
+          </button>
           <p className="quantity">{qty}</p>
           <button
             className="btn-control increase-btn"

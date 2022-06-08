@@ -1,4 +1,4 @@
-import { increaseQuanity } from "../utils";
+import { increaseQuanity, decreaseQuanity } from "../utils";
 
 const cartReducer = (state, action) => {
   switch (action.type) {
@@ -11,6 +11,11 @@ const cartReducer = (state, action) => {
       return {
         ...state,
         cart: increaseQuanity(action.payload.productId, state.cart),
+      };
+    case "DECREASE_QUANTITY":
+      return {
+        ...state,
+        cart: decreaseQuanity(action.payload.productId, state.cart),
       };
     case "REMOVE_FROM_CART":
       return {
